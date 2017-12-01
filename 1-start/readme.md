@@ -4,7 +4,7 @@
 
 ### try
 
-```
+```shell
 ## 安装
 ➜  FlaskAppBuilder git:(master) ✗ source activate Python27
 (Python27) ➜  FlaskAppBuilder git:(master) ✗ pip install flask-appbuilder
@@ -35,7 +35,7 @@ Repeat for confirmation:
 
 列几个常用的
 
-```
+```shell
 create-app      # 创建你的APP
 create-admin    # 创建管理员
 create-db       # 创建数据库对象(SQLAlchemy)
@@ -49,7 +49,7 @@ version         # FAB的版本
 
 ### Base Configuration
 
-```
+```python
 ## config.py
 app = Flask(__name__)
 app.config.from_object('config')
@@ -156,7 +156,7 @@ Models定义表：
   - 联系人分组，对联系人进行分类
   - 性别
 
-```
+```python
 # coding=utf-8
 from sqlalchemy import Column, Integer, String, ForeignKey, Date
 from sqlalchemy.orm import relationship
